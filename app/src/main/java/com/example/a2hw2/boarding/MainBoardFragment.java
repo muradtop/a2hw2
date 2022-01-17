@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
+import com.example.a2hw2.adapter.ViewPagerAdapter;
 import com.example.a2hw2.client.ViewPagerClient;
 import com.example.a2hw2.databinding.FragmentMainBoardBinding;
 import com.example.a2hw2.model.ViewPagerModel;

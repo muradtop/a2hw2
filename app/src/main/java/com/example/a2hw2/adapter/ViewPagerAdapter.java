@@ -1,4 +1,4 @@
-package com.example.a2hw2.boarding;
+package com.example.a2hw2.adapter;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
