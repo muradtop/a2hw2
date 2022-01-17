@@ -7,7 +7,7 @@
     android:background="@color/white"
     android:orientation="vertical"
     android:padding="12dp"
-    tools:context="com.example.a2hw2.boarding.BoardFragment">
+    tools:context="com.example.a2hw2.activity.MainActivity">
 
 
     <ImageView
