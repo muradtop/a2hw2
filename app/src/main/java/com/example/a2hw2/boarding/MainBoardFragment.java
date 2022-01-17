@@ -10,7 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.a2hw2.R;
+
+import com.example.a2hw2.client.ViewPagerClient;
 import com.example.a2hw2.databinding.FragmentMainBoardBinding;
 import com.example.a2hw2.model.ViewPagerModel;
 
@@ -32,12 +33,13 @@ public class MainBoardFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        list.add(new ViewPagerModel("Welcome to productive life!", "Collaboration with students ",R.drawable.toto));
-        list.add(new ViewPagerModel("Регистрируйся скорее", "Успевай делать то что раньше не успевал !", R.drawable.doto));
-        list.add(new ViewPagerModel("3", "3", R.drawable.doto2));
+        getData();
+    }
+
+    private void getData() {
+        list = ViewPagerClient.getPagerlist();
         adapter = new ViewPagerAdapter(list);
         binding.viewpager.setAdapter(adapter);
-
-
+        binding.dotsIndicator.setViewPager2(binding.viewpager);
     }
 }

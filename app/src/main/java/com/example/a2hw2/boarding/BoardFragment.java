@@ -9,13 +9,16 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.a2hw2.R;
+import com.example.a2hw2.databinding.FragmentBoardBinding;
 
 
 public class BoardFragment extends Fragment {
+    private FragmentBoardBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_board, container, false);
+        binding = FragmentBoardBinding.inflate(getLayoutInflater(),container,false);
+        return binding.getRoot();
     }
 }
